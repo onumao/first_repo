@@ -1,0 +1,228 @@
+header {
+    background-color: rgb(224, 58, 80);
+    margin: 0;
+    padding: 10px;
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#gametitle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: linear-gradient( to top, rgb(214, 38, 7) 40%, rgb(0, 0, 0) 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.center-align {
+    text-align: center;
+}
+
+body {
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.content {
+    background-color: #fffef7;
+    padding: 20px;
+    margin: 0;
+}
+
+/* リンクのスタイル */
+
+a.link {
+    text-decoration: none;
+    /* 下線なくす */
+    color: #000;
+    /* 文字色:黒 */
+}
+
+/* リンクにマウスオーバーした時 */
+
+a.link:hover {
+    color: rgb(125, 192, 94);
+    /* 文字色:緑 */
+}
+
+/* ゲームボード */
+
+#gameboad {
+    width: 300px;
+    height: 400px;
+    /* 中央ぞろえ */
+    margin-left: auto;
+    margin-right: auto;
+    border: solid #666;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+}
+
+/* ゲームボードのセル */
+
+#gameboad tr td {
+    width: 100px;
+    height: 100px;
+    /* background-color: rgb(9, 187, 39); */
+    border: solid #555;
+}
+
+/* たこの移動範囲 */
+
+tr#T-field td {
+    background-color: #9aff6b;
+}
+
+/* MP表示 */
+
+.MPgauge {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#MPcell {
+    width: 200px;
+    height: 40px;
+}
+
+/* MPのゲージ */
+
+#MPcell tr td {
+    width: 50px;
+    height: 40px;
+    /*background-color: rgba(16, 108, 247, 0.7);*/
+    border: solid #555;
+}
+
+/* 画面右側の点数や時間表示 */
+
+.hyouzi {
+    width: 150spx;
+    margin: auto;
+}
+
+/* 文字 */
+
+.name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* 値 */
+
+.value {
+    font-family: 'Crete Round', serif;
+    font-size: 40px;
+    margin: 0;
+    color: rgb(243, 114, 29);
+}
+
+/* 画像を非表示にする */
+
+.I_hidden_img img, .T_hidden_img img {
+    visibility: hidden;
+}
+
+/* 画像を表示する */
+
+.I_visible_img img, .T_visible_img img {
+    visibility: visible;
+}
+
+/* 共通事項 */
+
+/* イカ */
+
+.I_visible_img, .I_hidden_img {
+    background-color: rgb(9, 187, 39);
+}
+
+/* タコ */
+
+.T_visible_img, .T_hidden_img {
+    background-color: #9aff6b;
+}
+
+/* 一瞬白くなる */
+
+.white {
+    background-color: rgb(187, 248, 185) !important;
+}
+
+/* mpゲージの色 */
+
+.blue {
+    background-color: rgba(16, 108, 247, 0.7);
+}
+
+.black {
+    background-color: rgb(150, 150, 150);
+}
+
+/* タコのセルが赤くなる */
+
+.red {
+    background-color: rgb(255, 93, 81) !important;
+}
+
+/* ダイアログ */
+
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    width: 400px;
+    top: 200px;
+    background-color: rgb(252, 230, 31);
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000;
+}
+
+.d_text {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#totalscore {
+    font-size: 20px;
+}
+
+#d_link {
+    text-decoration: none;
+    color: #000;
+}
+
+#d_link:hover {
+    color: rgb(125, 192, 94);
+    /* 文字色:緑 */
+}
+
+#atention{
+    text-align: right;
+    font-size: 12px;
+}
+
+.d_japa {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}

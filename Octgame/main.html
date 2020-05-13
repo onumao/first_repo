@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octaro'sVenture</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_oct.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Octaro'sVenture</h1>
+        </header>
+        <div class="content parent">
+            <div class="row">
+                <!-- MPゲージ -->
+                <div class="MPgauge col-md-3 col-sm-5">
+                    <p class="name">MP</p>
+                    <table id="MPcell">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- ゲーム盤面 -->
+                <div class="gametable col-md-6 col-sm-7">
+                    <table id="gameboad">
+                        <!-- イカの行動範囲 -->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <!-- タコの行動範囲 -->
+                        <tr id="T-field">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="hyouzi col-md-3">
+                    <!-- 点数表示 -->
+                    <div class="score">
+                        <p class="name">Score</p>
+                        <p class="value" id="score-value">0</p>
+                    </div>
+                    <!-- 制限時間表示 -->
+                    <div class="time">
+                        <p class="name">Time</p>
+                        <p class="value" id="time-value">60</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <dialog class ="child">
+        <h3 class = "d_text">Time Up!!</h3>
+        <p id="totalscore" class = "d_text">SCORE : 0</p>
+        <p id="result_text" class = "d_text d_japa"></p>
+        <p class="center-align d_text d_japa"><a href="index.html" id="d_link">-タイトルに戻る-</a></p>
+    </dialog>
+
+
+    <!-- 効果音 -->
+    <audio id="z_atack" preload="auto">
+        <source src="sound/z.mp3" type="audio/mp3">
+    </audio>
+    <audio id="space_atack" preload="auto">
+        <source src="sound/space.mp3" type="audio/mp3">
+    </audio>
+    <audio id="T_atack" preload="auto">
+        <source src="sound/T_atack.mp3" type="audio/mp3">
+    </audio>
+    <audio id="T_damaged" preload="auto">
+        <source src="sound/T_damage.mp3" type="audio/mp3">
+    </audio>
+    <audio id="gamestart" preload="auto">
+        <source src="sound/gamestart.mp3" type="audio/mp3">
+    </audio>
+    <audio id="gameset" preload="auto">
+        <source src="sound/gameset.mp3" type="audio/mp3">
+    </audio>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
